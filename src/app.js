@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
-  res.send("Polling API is running 🚀");
+  res.send("Polling API is running successfully");
 });
 
 app.use("/polls", pollRoutes);
