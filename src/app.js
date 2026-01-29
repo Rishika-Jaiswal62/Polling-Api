@@ -6,6 +6,11 @@ const swaggerSpec = require("./swagger");
 const app = express();
 app.use(express.json());
 
+
+app.get("/", (req, res) => {
+  res.send("Polling API is running 🚀");
+});
+
 app.use("/polls", pollRoutes);
 
 // swagger
